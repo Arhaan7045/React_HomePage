@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --red: #d01c28;
+    --gray: #2e2e2e;
+    --white: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    all: unset;
+    padding: 6px 16px;
+    background: var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    max-width: 1150px;
+    margin: 0px auto;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
 }
+
+nav ul li {
+    font-size: 18px;
+    transition: .5s ease;
+}
+
+nav ul li:hover {
+    text-shadow: 0 0 10px #d01c28, 0 0 20px #d01c28, 0 0 42px #d01c28, 0 0 82px #d01c28,0 0 92px #ff0000;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: calc(90vh - 70px);
+}
+
+.hero-image {
+    margin: 40px 0 0 45px;
+}
+
+.hero-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 95px;
+    line-height: 90px;
+}
+
+.hero p {
+    font-weight: 600;
+    color: var(--gray);
+}
+
+.hero-btn {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.secondary-btn {
+    color: var(--gray);
+    background: transparent;
+    border: 1px solid var(--gray);
+}
+
+.shopping p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.brand-icons {
+    display: flex;
+    gap: 16px;
+}
+
